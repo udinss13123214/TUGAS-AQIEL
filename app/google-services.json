@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "298339506279",
+    "firebase_url": "https://informasippdb-a32b5-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "informasippdb-a32b5",
+    "storage_bucket": "informasippdb-a32b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298339506279:android:86f0c4739162794f6b9cc2",
+        "android_client_info": {
+          "package_name": "com.ql.aqiel_adhi_r.aqiel_adhi_rajendra.asesmen.informasippdb"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB07GT-dUwoT_8_L9DLuAp7zOC1kbP2pHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298339506279:android:4ac170925d34198f6b9cc2",
+        "android_client_info": {
+          "package_name": "com.ql.aqiel_adhi_r.aqiel_adhi_rajendra.asesmen.jatengppdb"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB07GT-dUwoT_8_L9DLuAp7zOC1kbP2pHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

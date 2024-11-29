@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.INFORMASIPPDB" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <!--button-->
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <!--Dark Mode -->
+    <style name="color">
+        <item name="android:textColor">#000000</item>
+
+    </style>
+    <!--Dropdown-->
+    <style name="dropdown">
+        <item name="android:textColor">#000000</item>
+
+    </style>
+
+    <style name="header">
+        <item name="android:textColor">#ffffff</item>
+
+    </style>
+    <style name="box">
+        <item name="android:color">#ffffff</item>
+    </style>
+
+    <style name="silang">
+        <item name="android:src">@drawable/baseline_close</item>
+
+    </style>
+
+    <style name="user">
+        <item name="android:src">@drawable/baseline_supervised_user_circle_24</item>
+
+    </style>
+    <style name="cardcolor">
+        <item name="android:background">@color/abu</item>
+
+    </style>
+
+    <style name="inputform">
+        <item name="android:textColor">#ffffff</item>
+
+    </style>
+
+</resources>

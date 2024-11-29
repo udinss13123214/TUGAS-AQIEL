@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- CardView User Info -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="25dp"
+            android:backgroundTint="@color/black">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/userPP"
+                        android:layout_width="75dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/baseline_supervised_user_circle_24"
+                        android:contentDescription="User Icon"/>
+
+                    <TextView
+                        android:id="@+id/isinama"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Nama"
+                        android:layout_weight="1"
+                        android:textColor="#ffff"
+                        android:textSize="25sp"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:id="@+id/button_edit_Nama"
+                        android:layout_width="match_parent"
+                        android:layout_height="24dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:src="@drawable/baseline_edit_24"
+                        android:contentDescription="Edit Pilihan 2"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="NIS :"
+                        android:textColor="#ffff"
+                        android:textSize="19sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tempatnis"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Disii NIS anda"
+                        android:textColor="#ffff"
+                        android:textSize="19sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView Nilai Mapel -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="20dp"
+            android:backgroundTint="@color/abu">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nilai Mapel : "
+                    android:textStyle="bold"
+                    android:textSize="19sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <!-- Layout IPA -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="IPA :"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/outputIpa"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <!-- Layout Matematika -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Matematika :"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/outputMat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <!-- Layout Bahasa Indonesia -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Indonesia :"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/outputIndo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <!-- Layout Bahasa Inggris -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Inggris :"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/outputInggris"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <!-- Layout Nilai Total -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nilai Total :"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/nilairata"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <!-- Layout Pilihan 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Pilihan 1 :"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/pilihan1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="- "
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <!-- Layout Pilihan 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Pilihan 2 :"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/pilihan2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- Tombol Logout dan Hapus Data Berjejeran -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <Button
+                android:id="@+id/button_logout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Logout"
+                android:backgroundTint="#ff1100"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/hapusdata"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:text="Hapus Data"
+                android:backgroundTint="#ff1100"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <!-- Tombol Menuju Beranda di Bawah -->
+        <Button
+            android:id="@+id/Keberanda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menuju Beranda"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/Green"
+            android:textColor="@android:color/white"/>
+        <ImageView
+            android:id="@+id/tombolsetting"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/baseline_settings"
+            android:layout_gravity="end"/>
+
+    </LinearLayout>
+</ScrollView>

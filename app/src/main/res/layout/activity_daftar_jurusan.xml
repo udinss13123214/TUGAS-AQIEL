@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <!-- Title or header text for better UI understanding -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            style="@style/header"
+            android:text="SISWA YANG LOLOS"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/kembali"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            style="@style/silang" />
+    </LinearLayout>
+
+    <!-- Spinner untuk memilih sekolah dengan border -->
+    <Spinner
+        android:id="@+id/schoolSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/spinner_border"
+        android:padding="12dp"
+        android:spinnerMode="dropdown"
+        style="@style/dropdown"
+        />
+
+    <!-- Spinner untuk memilih jurusan (disembunyikan) -->
+    <Spinner
+        android:id="@+id/departmentSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@drawable/spinner_border"
+        android:padding="12dp"
+        android:spinnerMode="dropdown"/>
+
+    <!-- RecyclerView container -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        />
+
+    </LinearLayout>
+
+</ScrollView>

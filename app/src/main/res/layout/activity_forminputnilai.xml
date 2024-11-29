@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Forminputnilai">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Input Nilai Bahasa Inggris -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nilai Bahasa Inggris"
+                android:textSize="16sp"
+                android:textColor="?android:textColor"
+                android:paddingEnd="10dp"/>
+            <EditText
+                android:id="@+id/inputBahasaInggris"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="0"
+                android:maxLength="3"
+                style="@style/inputform"
+                android:textColorHint="@android:color/darker_gray"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"/>
+        </LinearLayout>
+
+        <!-- Input Nilai Matematika -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nilai Matematika"
+                android:textSize="16sp"
+                android:textColor="?android:textColor"
+                android:paddingEnd="10dp"/>
+            <EditText
+                android:id="@+id/inputMatematika"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="0"
+                android:maxLength="3"
+                style="@style/inputform"
+                android:textColorHint="@android:color/darker_gray"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"/>
+        </LinearLayout>
+
+        <!-- Input Nilai Bahasa Indonesia -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nilai Bahasa Indonesia"
+                android:textSize="16sp"
+                android:textColor="?android:textColor"
+                android:paddingEnd="10dp"/>
+            <EditText
+                android:id="@+id/inputBahasaIndonesia"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="0"
+                android:maxLength="3"
+                style="@style/inputform"
+                android:textColorHint="@android:color/darker_gray"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"/>
+        </LinearLayout>
+
+        <!-- Input Nilai IPA -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nilai IPA"
+                android:textSize="16sp"
+                android:textColor="?android:textColor"
+                android:paddingEnd="10dp"/>
+            <EditText
+                android:id="@+id/inputIPA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="0"
+                android:maxLength="3"
+                style="@style/inputform"
+                android:textColorHint="@android:color/darker_gray"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"/>
+        </LinearLayout>
+
+        <!-- Total Nilai -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total Nilai Rata Rata"
+                android:textSize="16sp"
+                android:textColor="?android:textColor"
+                android:paddingEnd="10dp"/>
+            <TextView
+                android:id="@+id/Totalnilai"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="0"
+                android:padding="12dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                style="@style/inputform"
+                android:background="@drawable/custom_edit_text"/>
+        </LinearLayout>
+
+        <!-- Input Nomor HP -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nomor HP"
+                android:textSize="16sp"
+                android:textColor="?android:textColor"
+                android:paddingEnd="10dp"/>
+            <EditText
+                android:id="@+id/inputNoHp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="phone"
+                android:hint="08123456789"
+                android:maxLength="13"
+                style="@style/inputform"
+                android:textColorHint="@android:color/darker_gray"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"/>
+        </LinearLayout>
+
+        <!-- Input Alamat -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Alamat"
+                android:textSize="16sp"
+                android:textColor="?android:textColor"
+                android:paddingEnd="10dp"/>
+            <EditText
+                android:id="@+id/inputAlamat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textPostalAddress"
+                android:hint="Masukkan Alamat"
+                android:maxLength="50"
+                style="@style/inputform"
+                android:textColorHint="@android:color/darker_gray"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"/>
+        </LinearLayout>
+
+        <!-- Input Agama -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Agama"
+                android:textSize="16sp"
+                android:textColor="?android:textColor"
+                android:paddingEnd="10dp"/>
+
+            <!-- Mengganti EditText menjadi Spinner -->
+            <Spinner
+                android:id="@+id/spinnerAgama"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"/>
+        </LinearLayout>
+        <!-- Input Jenis Kelamin -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Jenis Kelamin"
+                android:textSize="16sp"
+                android:textColor="?android:textColor"
+                android:paddingEnd="10dp"/>
+
+            <!-- Radio Group untuk Laki-Laki dan Perempuan -->
+            <RadioGroup
+                android:id="@+id/radioGroupGender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <!-- RadioButton untuk Laki-Laki -->
+                <RadioButton
+                    android:buttonTint="@drawable/radio_button_selector"
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cowok"
+                    android:textColor="?android:textColor"/>
+
+                <!-- RadioButton untuk Perempuan -->
+                <RadioButton
+
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cewek"
+                    android:buttonTint="@drawable/radio_button_selector"
+                    android:textColor="?android:textColor"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Input Nama Orang Tua -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nama Orang Tua"
+                android:textSize="16sp"
+                android:textColor="?android:textColor"
+                android:paddingEnd="10dp"/>
+            <EditText
+                android:id="@+id/inputNamaOrtu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:hint="Nama Orang Tua"
+                android:maxLength="50"
+                style="@style/inputform"
+                android:textColorHint="@android:color/darker_gray"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"/>
+        </LinearLayout>
+
+        <!-- Input Nomor HP Orang Tua -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="No HP Orang Tua"
+                android:textSize="16sp"
+                android:textColor="?android:textColor"
+                android:paddingEnd="10dp"/>
+            <EditText
+                android:id="@+id/inputNoHpOrtu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="phone"
+                android:hint="08123456789"
+                android:maxLength="13"
+                style="@style/inputform"
+                android:textColorHint="@android:color/darker_gray"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"/>
+        </LinearLayout>
+        <!--Uplod gambar-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+
+            <!-- Bagian Foto Nilai Rapot -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Foto Nilai Rapor"
+                    android:textSize="16sp"
+                    android:textColor="?android:textColor" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Maximal Size 1 MB"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black" />
+
+
+                <ImageView
+                    android:id="@+id/image_upload_rapot"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_uplod" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Button Simpan -->
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Simpan"
+            android:backgroundTint="@color/Green"
+            android:padding="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
